@@ -59,7 +59,11 @@ Global Styles
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: var(--clr-pink);
+  background-image: url('https://images.ctfassets.net/3s5io6mnxfqz/2dKTJ12OsqX5iL7SNr2ZDG/44732bee845da68e347d7a1a4368118d/AdobeStock_116757492.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   color: var(--clr-grey-9);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -133,6 +137,16 @@ p {
   }
 }
 
+@media screen and (min-width: 635) {
+  .section {
+    width: 20vw;
+  }
+  
+  }
+  
+  
+
+
 main {
   min-height: 100vh;
   display: flex;
@@ -162,10 +176,10 @@ main {
   align-items: center;
 }
 .person img {
-  width: 75px;
-  height: 75px;
+  width: 200px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 5%;
   box-shadow: var(--light-shadow);
 }
 .person h4 {
@@ -179,13 +193,13 @@ main {
   display: block;
   width: 100%;
   border-color: transparent;
-  background: var(--clr-pink);
+  background: gray;
   margin: 2rem auto 0 auto;
   text-transform: capitalize;
   font-size: 1.2rem;
   padding: 0.5rem 0;
   letter-spacing: var(--spacing);
   border-radius: var(--radius);
-  outline: 1px solid rgba(242, 138, 178, 0.8);
+  outline: 1px solid #020202cc;
   cursor: pointer;
 }
